@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Bo Sun</title>
-    <link>https://bsun0802.github.io/full-site/project/</link>
+    <link>https://bsunfullsite.github.io/project/</link>
     <description>Recent content in Projects on Bo Sun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bo Sun &amp;copy; 2018</copyright>
     <lastBuildDate>Mon, 24 Sep 2018 00:00:00 -0700</lastBuildDate>
     
-	<atom:link href="https://bsun0802.github.io/full-site/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bsunfullsite.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Fun video transformer in Python</title>
-      <link>https://bsun0802.github.io/full-site/project/internal-project/</link>
+      <link>https://bsunfullsite.github.io/project/internal-project/</link>
       <pubDate>Mon, 24 Sep 2018 00:00:00 -0700</pubDate>
       
-      <guid>https://bsun0802.github.io/full-site/project/internal-project/</guid>
+      <guid>https://bsunfullsite.github.io/project/internal-project/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
     </item>
     
     <item>
       <title>Gitbook example</title>
-      <link>https://bsun0802.github.io/full-site/project/gitbook-example/</link>
+      <link>https://bsunfullsite.github.io/project/gitbook-example/</link>
       <pubDate>Thu, 23 Nov 2017 00:00:00 -0800</pubDate>
       
-      <guid>https://bsun0802.github.io/full-site/project/gitbook-example/</guid>
+      <guid>https://bsunfullsite.github.io/project/gitbook-example/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gene Viz 1.0(R Shiny Dashboard)</title>
-      <link>https://bsun0802.github.io/full-site/project/external-project/</link>
+      <link>https://bsunfullsite.github.io/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0700</pubDate>
       
-      <guid>https://bsun0802.github.io/full-site/project/external-project/</guid>
+      <guid>https://bsunfullsite.github.io/project/external-project/</guid>
       <description></description>
     </item>
     

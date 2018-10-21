@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview on Bo Sun</title>
-    <link>https://bsun0802.github.io/full-site/tutorial/</link>
+    <link>https://bsunfullsite.github.io/tutorial/</link>
     <description>Recent content in Overview on Bo Sun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bo Sun &amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 09 Sep 2018 00:00:00 -0700</lastBuildDate>
     
-	<atom:link href="https://bsun0802.github.io/full-site/tutorial/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bsunfullsite.github.io/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Deep Learning with PyTorch</title>
-      <link>https://bsun0802.github.io/full-site/tutorial/pytorch/</link>
+      <link>https://bsunfullsite.github.io/tutorial/pytorch/</link>
       <pubDate>Sat, 20 Oct 2018 00:00:00 -0700</pubDate>
       
-      <guid>https://bsun0802.github.io/full-site/tutorial/pytorch/</guid>
+      <guid>https://bsunfullsite.github.io/tutorial/pytorch/</guid>
       <description>Coming soon. I&amp;rsquo;m currently taking the course Deep Learning with PyTorch on edX.
 Tutorial will be created when I finished the course and get spare time.</description>
     </item>
     
     <item>
       <title>Create your own website with HUGO</title>
-      <link>https://bsun0802.github.io/full-site/tutorial/create-hugo/</link>
+      <link>https://bsunfullsite.github.io/tutorial/create-hugo/</link>
       <pubDate>Sat, 20 Oct 2018 00:00:00 -0700</pubDate>
       
-      <guid>https://bsun0802.github.io/full-site/tutorial/create-hugo/</guid>
+      <guid>https://bsunfullsite.github.io/tutorial/create-hugo/</guid>
       <description>Hugo is a framework for building websites, technically speaking, building static pages. You could build your own website with the only prerequisite of some command line and start writing immediately with markdown. Step 0. Install Homebrew If you have a Mac but not using Homebrew, you definitely have to try this package manager. And we will need it to install Hugo anyway. Use the following command to install Homebrew: &amp;gt;</description>
     </item>
     
     <item>
       <title>Deploy your HUGO website online</title>
-      <link>https://bsun0802.github.io/full-site/tutorial/deploy-hugo/</link>
+      <link>https://bsunfullsite.github.io/tutorial/deploy-hugo/</link>
       <pubDate>Sat, 20 Oct 2018 00:00:00 -0700</pubDate>
       
-      <guid>https://bsun0802.github.io/full-site/tutorial/deploy-hugo/</guid>
+      <guid>https://bsunfullsite.github.io/tutorial/deploy-hugo/</guid>
       <description>Deploy on Netlify steps Deploy your HUGO website on Netlify is astonishingly easy, if you are a beginner, it is recommended to use this approach.
 Netlify is free and provides fast global access, automated deployment when you add or modify content, and one-click HTTPS security. Netlify free account will create a non-sense domain for your website, to deploy, simply:
  Create a Netlify account create a repository on Github(Netlify also support other providers)for you finished website Log-in Netlify and then click New site from git and follow click-and-confirm instructions from Netlify Wait a couple minutes, and you are good to go.</description>
