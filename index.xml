@@ -209,7 +209,7 @@ whatever you like. For the sake of argument, let&amp;rsquo;s assume this reposit
 on GitHub.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;setup-when-nothing-is-committed&#34;&gt;Setup When Nothing is Committed&lt;/h3&gt;
+&lt;h3 id=&#34;setup-when-nothing-is-committed-select-one-of-this-two&#34;&gt;Setup When Nothing is Committed(select one of this two)&lt;/h3&gt;
 
 &lt;p&gt;Create two new, empty repositories on GitHub:&lt;/p&gt;
 
@@ -229,7 +229,7 @@ README&lt;/em&gt; box, since that will make the next step easier.&lt;/li&gt;
 $ git remote add origin git@github.com:&amp;lt;username&amp;gt;/blog.git
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;setup-when-you-ve-already-committed-and-pushed&#34;&gt;Setup When You&amp;rsquo;ve Already Committed and Pushed&lt;/h3&gt;
+&lt;h3 id=&#34;setup-when-you-ve-already-committed-and-pushed-select-one-of-this-two&#34;&gt;Setup When You&amp;rsquo;ve Already Committed and Pushed(select one of this two)&lt;/h3&gt;
 
 &lt;p&gt;If you&amp;rsquo;ve already got your Hugo site committed to source control and pushed up to
 GitHub, then the process is similar, except that you need to make room for the submodule
