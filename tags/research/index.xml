@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>research on Bo Sun</title>
+    <link>https://bsun0802.github.io/full-site/tags/research/</link>
+    <description>Recent content in research on Bo Sun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Bo Sun &amp;copy; 2018</copyright>
+    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://bsun0802.github.io/full-site/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gitbook example</title>
+      <link>https://bsun0802.github.io/full-site/project/gitbook-example/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/project/gitbook-example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gene Viz 1.0(R Shiny Dashboard)</title>
+      <link>https://bsun0802.github.io/full-site/project/external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0700</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/project/external-project/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

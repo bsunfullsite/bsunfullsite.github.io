@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plot on Bo Sun</title>
+    <link>https://bsun0802.github.io/full-site/tags/plot/</link>
+    <description>Recent content in plot on Bo Sun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Bo Sun &amp;copy; 2018</copyright>
+    <lastBuildDate>Sat, 20 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://bsun0802.github.io/full-site/tags/plot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quantile Normalization and Inverse Normal Transform</title>
+      <link>https://bsun0802.github.io/full-site/post/quantile-nomrlization-and-inverse-normal-transform/quantile-normalization-and-inverse-normal-transform/</link>
+      <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/post/quantile-nomrlization-and-inverse-normal-transform/quantile-normalization-and-inverse-normal-transform/</guid>
+      <description>[image] # Caption (optional) caption = “Image credit: Unsplash”
+# Focal point (optional) # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight focal_point = “”
+Dependency This post demonstrate the following:
+ Quantile Normalization implemented in R package preprocessCore. Inverse-Normal-Transform implemented in RNOmni  source(&amp;quot;http://www.bioconductor.org/biocLite.R&amp;quot;) biocLite(&amp;quot;preprocessCore&amp;quot;) install.packages(&amp;quot;RNOmni&amp;quot;) library(preprocessCore) library(RNOmni)  General Princinples Quantile Normalization Simplest way to put it: Quantile normalization is a technique for making different distributions have the same statistical property by “aligning”&amp;quot; their quantiles.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>https://bsun0802.github.io/full-site/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+  </channel>
+</rss>

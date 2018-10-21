@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bo Sun on Bo Sun</title>
+    <link>https://bsun0802.github.io/full-site/</link>
+    <description>Recent content in Bo Sun on Bo Sun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Bo Sun &amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
+    <atom:link href="/full-site/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Deep Learning with PyTorch</title>
+      <link>https://bsun0802.github.io/full-site/tutorial/pytorch/</link>
+      <pubDate>Sat, 20 Oct 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/tutorial/pytorch/</guid>
+      <description>
+
+&lt;h1 id=&#34;coming-soon&#34;&gt;Coming soon.&lt;/h1&gt;
+
+&lt;p&gt;I&amp;rsquo;m currently taking the course &lt;em&gt;Deep Learning with PyTorch&lt;/em&gt; on &lt;a href=&#34;https://www.edx.org&#34; target=&#34;_blank&#34;&gt;edX&lt;/a&gt;.&lt;br /&gt;
+Tutorial will be created when I finished the course and get spare time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Create your own website with HUGO</title>
+      <link>https://bsun0802.github.io/full-site/tutorial/create-hugo/</link>
+      <pubDate>Sat, 20 Oct 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/tutorial/create-hugo/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; is a framework for building websites, technically speaking, building static pages. You could build your own website with the only prerequisite of some &lt;a href=&#34;https://www.learnenough.com/command-line-tutorial&#34; target=&#34;_blank&#34;&gt;command line&lt;/a&gt; and start writing immediately with &lt;a href=&#34;https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf&#34; target=&#34;_blank&#34;&gt;markdown&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-0-install-homebrew&#34;&gt;Step 0. Install Homebrew&lt;/h2&gt;
+
+&lt;p&gt;If you have a Mac but not using &lt;a href=&#34;https://brew.sh&#34; target=&#34;_blank&#34;&gt;Homebrew&lt;/a&gt;, you definitely have to try this package manager. And we will need it to install Hugo anyway.&lt;/p&gt;
+
+&lt;p&gt;Use the following command to install Homebrew:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; /usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
+
+&amp;gt; brew --version # check installation
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
+
+&lt;p&gt;If you have installed Homebrew successfully, then you could have Hugo installed in one line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; brew install hugo
+&amp;gt; hugo help # you are good to go!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;for-users-of-other-os&#34;&gt;For users of other OS&lt;/h1&gt;
+
+&lt;p&gt;If you are &lt;strong&gt;not&lt;/strong&gt; using macOS, you need to check more complete instructions at &lt;a href=&#34;https://gohugo.io/getting-started/installing/&#34; target=&#34;_blank&#34;&gt;Install Hugo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-2-create-a-new-site&#34;&gt;Step 2. Create a new site&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; hugo new site /@path/your-new-site
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above will create a folder named &lt;code&gt;your-new-site&lt;/code&gt; in your designated @path. And it will be the root of your newly created Hugo web application.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-3-add-a-theme&#34;&gt;Step 3. Add a theme&lt;/h2&gt;
+
+&lt;p&gt;Being one of the most popular open-source framework for building websites, Hugo has a large and responsive community producing cool themes. Complete list of available themes can be found &lt;a href=&#34;https://themes.gohugo.io&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;From the root of you Hugo site:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; cd @your-new-site
+&amp;gt; git init
+&amp;gt; # add as submodule your favorite theme into `themes/@your-theme`:
+&amp;gt; git submodule add https://github.com/@author/@your-theme.git themes/@your-theme
+&amp;gt; # example
+&amp;gt; # git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+
+&amp;gt; # Generate site files into public directory
+&amp;gt; hugo -t @your-theme
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;See also Hugo&amp;rsquo;s &lt;a href=&#34;https://blog.olowolo.com/post/hugo-quick-start/&#34; target=&#34;_blank&#34;&gt;Quick Start&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-4-start-writing&#34;&gt;Step 4. Start writing&lt;/h2&gt;
+
+&lt;p&gt;Congratulations, your first blog post is only one stone&amp;rsquo;s throw from here!&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-posts&#34;&gt;Creating Posts&lt;/h3&gt;
+
+&lt;p&gt;Posts should generally go under a &lt;code&gt;content/blog&lt;/code&gt; directory. Simply run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; hugo new blog/your-new-post.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the above will create &lt;code&gt;your-new-post.md&lt;/code&gt; under &lt;code&gt;content/blog/&lt;/code&gt;, as well as the &lt;code&gt;content/blog/&lt;/code&gt; directory itself if not exist.&lt;/p&gt;
+
+&lt;p&gt;For posts to be displayed on your site, you could do one of the following:
+   * add &lt;code&gt;draft = false&lt;/code&gt; in the post’s &lt;a href=&#34;https://gohugo.io/content-management/front-matter/#readout&#34; target=&#34;_blank&#34;&gt;front matter&lt;/a&gt;
+   * or use the &lt;code&gt;--buildDrafts&lt;/code&gt; option when building
+   * or add &lt;code&gt;builddrafts = true&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-fixed-pages&#34;&gt;Creating Fixed Pages&lt;/h3&gt;
+
+&lt;p&gt;Fixed pages such as an About page should preferably go under &lt;code&gt;content/fixed&lt;/code&gt; or be present at the root of the &lt;code&gt;content&lt;/code&gt; directory(my preferable way).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; hugo new about.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The static pages you are going to build is genuinely text-based and the only tool you need to grab is the &lt;a href=&#34;https://www.markdownguide.org&#34; target=&#34;_blank&#34;&gt;markdown&lt;/a&gt; makeup language.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-5-infinity-have-fun-playing-with-it&#34;&gt;Step 5 - Infinity. Have fun playing with it.&lt;/h2&gt;
+
+&lt;p&gt;The best approach to learn something is to play with it. Actually I build this site as a 2018 birthday gift to myself.&lt;/p&gt;
+
+&lt;p&gt;Recommended starting point:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/documentation/&#34; target=&#34;_blank&#34;&gt;Hugo docs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gohugo.org/doc/tutorials/github-pages-blog/&#34; target=&#34;_blank&#34;&gt;Hugo 中文文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.olowolo.com/post/hugo-quick-start/&#34; target=&#34;_blank&#34;&gt;Hugo 从入门到会用&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Deploy your HUGO website online</title>
+      <link>https://bsun0802.github.io/full-site/tutorial/deploy-hugo/</link>
+      <pubDate>Sat, 20 Oct 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/tutorial/deploy-hugo/</guid>
+      <description>
+
+&lt;h1 id=&#34;deploy-on-netlify&#34;&gt;Deploy on Netlify&lt;/h1&gt;
+
+&lt;h2 id=&#34;steps&#34;&gt;steps&lt;/h2&gt;
+
+&lt;p&gt;Deploy your HUGO website on Netlify is astonishingly easy, if you are a beginner, it is recommended to use this approach.&lt;/p&gt;
+
+&lt;p&gt;Netlify is free and provides fast global access, automated deployment when you add or modify content, and one-click HTTPS security. Netlify free account will create a non-sense domain for your website, to deploy, simply:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a &lt;a href=&#34;https://www.netlify.com&#34; target=&#34;_blank&#34;&gt;Netlify account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;create a repository on Github(Netlify also support other providers)for you finished website&lt;/li&gt;
+&lt;li&gt;Log-in Netlify and then click &lt;strong&gt;New site from git&lt;/strong&gt; and follow click-and-confirm instructions from Netlify&lt;/li&gt;
+&lt;li&gt;Wait a couple minutes, and you are good to go.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;deploy-on-github-pages&#34;&gt;Deploy on GitHub Pages&lt;/h1&gt;
+
+&lt;p&gt;Acknowledgement: This post is a direct reproduction of &lt;a href=&#34;https://github.com/whipperstacker/blog&#34; target=&#34;_blank&#34;&gt;whipperstacker&amp;rsquo;s blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I found it extremely useful when it comes to deploy your Hugo sites on Github pages. It nails it perfectly!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;let-s-get-started&#34;&gt;Let&amp;rsquo;s get Started!&lt;/h2&gt;
+
+&lt;p&gt;If you already know how to use Hugo, and you&amp;rsquo;ve never used GitHub Pages before, and
+you just want to figure out how to get everything wired up and deployed with the least
+amount of fuss necessary, then a lot of the blog posts and tutorials you&amp;rsquo;ll find are
+going to be a bit frustrating.&lt;/p&gt;
+
+&lt;p&gt;Some tutorials will explain the GitHub Pages part in detail, but will make assumptions
+about how you&amp;rsquo;re generating your site, which won&amp;rsquo;t necessarily match what Hugo does.&lt;/p&gt;
+
+&lt;p&gt;Other tutorials will assume that you know &lt;em&gt;nothing&lt;/em&gt;, and will explain every step of
+everything from scratch.&lt;/p&gt;
+
+&lt;p&gt;This post assumes that you know what all the pieces are (hugo, repositories, a bit of DNS),
+and you just want to figure out the easiest way to stitch it all together.&lt;/p&gt;
+
+&lt;p&gt;First, a warning:&lt;/p&gt;
+
+&lt;h2 id=&#34;don-t-make-a-gh-pages-branch&#34;&gt;Don&amp;rsquo;t Make a &lt;code&gt;gh-pages&lt;/code&gt; Branch&lt;/h2&gt;
+
+&lt;p&gt;A lot of the documentation you&amp;rsquo;ll find will talk about creating a branch
+called &lt;code&gt;gh-pages&lt;/code&gt; for the HTML. This is great if you&amp;rsquo;re creating a portfolio
+site with sub-sites for different projects on GitHub.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re looking to create a stand-alone site mapped to a custom domain,
+then that is not the documentation you need.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;gh-pages&lt;/code&gt; branches are what GitHub refers to as &lt;em&gt;Project Pages&lt;/em&gt;. What
+you need when creating a stand-alone site are &lt;em&gt;User Pages&lt;/em&gt; or &lt;em&gt;Organization Pages&lt;/em&gt;
+(which are the same thing, it just depends on if your GitHub user is a user
+or an organization).&lt;/p&gt;
+
+&lt;p&gt;Ok, moving on.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-tale-of-two-repositories&#34;&gt;A Tale of Two Repositories&lt;/h2&gt;
+
+&lt;p&gt;The trick to deploying a stand-alone, hugo-generated site that will be hosted
+on a custom domain is that everything within &lt;code&gt;public/&lt;/code&gt; needs to be in its own
+repository, and that repository &lt;em&gt;must&lt;/em&gt; be named &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt;, where
+&lt;code&gt;&amp;lt;username&amp;gt;&lt;/code&gt; is your actual GitHub username.&lt;/p&gt;
+
+&lt;p&gt;This means that all the markdown and templates and configuration needs to go in
+a separate repository. The repository with all the Hugo stuff can be named
+whatever you like. For the sake of argument, let&amp;rsquo;s assume this repository is called &lt;code&gt;blog&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The initial setup depends on what your current situation is. Most likely, either:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;nothing is committed to source control yet, or&lt;/li&gt;
+&lt;li&gt;you already have your hugo site committed and pushed up to the &lt;code&gt;blog&lt;/code&gt; repository
+on GitHub.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;setup-when-nothing-is-committed&#34;&gt;Setup When Nothing is Committed&lt;/h3&gt;
+
+&lt;p&gt;Create two new, empty repositories on GitHub:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;blog&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; Make sure to check the &lt;em&gt;Initialize this repository with a
+README&lt;/em&gt; box, since that will make the next step easier.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Kill your hugo server so that it stops regenerating the HTML.&lt;/p&gt;
+
+&lt;p&gt;Delete the &lt;code&gt;public/&lt;/code&gt; directory with &lt;code&gt;rm -r public/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Initialize a git repository and add the remote:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git init
+$ git remote add origin git@github.com:&amp;lt;username&amp;gt;/blog.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;setup-when-you-ve-already-committed-and-pushed&#34;&gt;Setup When You&amp;rsquo;ve Already Committed and Pushed&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;rsquo;ve already got your Hugo site committed to source control and pushed up to
+GitHub, then the process is similar, except that you need to make room for the submodule
+that you&amp;rsquo;re going to add right after the setup is complete.&lt;/p&gt;
+
+&lt;p&gt;Kill your hugo server so that it stops regenerating the HTML.&lt;/p&gt;
+
+&lt;p&gt;Create a new, empty repository named &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; on GitHub, making sure
+to tick the &lt;em&gt;Initialize this repository with a README&lt;/em&gt; box.&lt;/p&gt;
+
+&lt;p&gt;Delete the &lt;code&gt;public/&lt;/code&gt; directory from git:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git rm -r public
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;adding-the-submodule&#34;&gt;Adding the Submodule&lt;/h3&gt;
+
+&lt;p&gt;Clone the &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repo into a submodule in &lt;code&gt;public&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git submodule add git@github.com:&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io.git public
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add everything and push it up to GitHub:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git add .
+$ git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;deploying&#34;&gt;Deploying&lt;/h3&gt;
+
+&lt;p&gt;Regenerate the HTML and push the submodule up to GitHub:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo -t -theme=YOURTHEME
+$ cd public
+$ git add .
+$ git commit -m &amp;quot;Generate site&amp;quot;
+$ git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should be able to see the index page up on &lt;username&gt;.github.io a few moments later.&lt;/p&gt;
+
+&lt;p&gt;Add a handy deploy script like &lt;a href=&#34;https://github.com/spencerlyon2/hugo_gh_blog/blob/master/deploy.sh&#34; target=&#34;_blank&#34;&gt;Spencer Lyon&amp;rsquo;s script&lt;/a&gt; to simplify things a bit.&lt;/p&gt;
+
+&lt;h3 id=&#34;make-the-whole-deploying-procedure-a-shell-script&#34;&gt;Make the whole deploying-procedure a shell script&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot;
+
+# Build the project.
+hugo -t cocoa-eh # if using a theme, replace with `hugo -t &amp;lt;YOURTHEME&amp;gt;`
+
+# Go To Public folder
+cd public
+# Add changes to git.
+git add .
+
+# Commit changes.
+msg=&amp;quot;rebuilding site `date`&amp;quot;
+if [ $# -eq 1 ]
+  then msg=&amp;quot;$1&amp;quot;
+fi
+git commit -m &amp;quot;$msg&amp;quot;
+
+# Push source and build repos.
+git push origin master
+
+# Come Back up to the Project Root
+cd ..
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Save the above content to a file like &lt;code&gt;deploy.sh&lt;/code&gt;. And when you build your site to remote site, call &lt;code&gt;sh deploy.sh&lt;/code&gt; and git add, commit and push if you also want to commit the changes of your site source files.&lt;/p&gt;
+
+&lt;h2 id=&#34;mapping-a-custom-domain&#34;&gt;Mapping a Custom Domain&lt;/h2&gt;
+
+&lt;p&gt;Whether you&amp;rsquo;re going to use a subdomain like &lt;code&gt;blog.yoursite.com&lt;/code&gt; or an apex domain like
+&lt;code&gt;yoursite.com&lt;/code&gt;, you need to first add a file named CNAME to the submodule repository containing
+the domain you&amp;rsquo;re mapping to.&lt;/p&gt;
+
+&lt;p&gt;Note that this file should be named &lt;code&gt;CNAME&lt;/code&gt;, even if the DNS record you&amp;rsquo;re creating is an A record
+or ALIAS record rather than a CNAME record.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re mapping a subdomain, create a CNAME record with your DNS provider. For an apex domain
+you&amp;rsquo;ll need either an ALIAS record on an A record. It depends on the provider.&lt;/p&gt;
+
+&lt;p&gt;For more information about DNS mappings, check out the &lt;a href=&#34;https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/&#34; target=&#34;_blank&#34;&gt;guide on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;regenerating-all-the-urls&#34;&gt;Regenerating All the URLS&lt;/h2&gt;
+
+&lt;p&gt;Once the DNS has propagated you&amp;rsquo;re going to need to change the base host name in the Hugo config
+file, regenerate the site with the correct urls, and redeploy.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quantile Normalization and Inverse Normal Transform</title>
+      <link>https://bsun0802.github.io/full-site/post/quantile-nomrlization-and-inverse-normal-transform/quantile-normalization-and-inverse-normal-transform/</link>
+      <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/post/quantile-nomrlization-and-inverse-normal-transform/quantile-normalization-and-inverse-normal-transform/</guid>
+      <description>&lt;p&gt;[image] # Caption (optional) caption = “Image credit: &lt;a href=&#34;https://unsplash.com/photos/CpkOjOcXdUY&#34;&gt;&lt;strong&gt;Unsplash&lt;/strong&gt;&lt;/a&gt;”&lt;/p&gt;
+&lt;p&gt;# Focal point (optional) # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight focal_point = “”&lt;/p&gt;
+&lt;div id=&#34;dependency&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Dependency&lt;/h2&gt;
+&lt;p&gt;This post demonstrate the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Quantile Normalization implemented in R package &lt;code&gt;preprocessCore&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Inverse-Normal-Transform implemented in &lt;code&gt;RNOmni&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;source(&amp;quot;http://www.bioconductor.org/biocLite.R&amp;quot;)
+biocLite(&amp;quot;preprocessCore&amp;quot;)
+install.packages(&amp;quot;RNOmni&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(preprocessCore)
+library(RNOmni)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;general-princinples&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;General Princinples&lt;/h2&gt;
+&lt;div id=&#34;quantile-normalization&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Quantile Normalization&lt;/h4&gt;
+&lt;p&gt;Simplest way to put it: Quantile normalization is a technique for making different distributions have the same statistical property by “aligning”&amp;quot; their quantiles. &lt;a href=&#34;https://www.youtube.com/watch?v=ecjN6Xpv6SE&#34;&gt;Statquest&lt;/a&gt; has a good video explaining this technique. Here is the video: 
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/ecjN6Xpv6SE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;inverse-normal-transform&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Inverse-Normal-Transform&lt;/h4&gt;
+&lt;p&gt;Inverse normal transformation, a.k.a &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2921808/&#34;&gt;&lt;em&gt;ranked based Inverse-Normal-Transformation(INT)&lt;/em&gt;&lt;/a&gt;, is a theoretically complicated method. But again, the simplest way to put it: INT increase the “normality” of the distribution, by aligning the quantiles to the standard normal quantiles. As a result we can now apply statistal models that have a normality assumption.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;be-cautious&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Be Cautious!&lt;/h4&gt;
+&lt;p&gt;Normalization techeniques are highly application specific. Blindly appling them may create as many problems as they solve. If you don’t know the “right”&amp;quot; one to use, you’d better do some test-ride and select the one that is statistically better(e.g. Cross-Validation, etc.).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;set-plot-parameters&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Set plot parameters&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(RColorBrewer)
+qual_col_pals = brewer.pal.info[brewer.pal.info$category == &amp;#39;qual&amp;#39;,]
+col_vec = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals))) # 74 colors in RcolorBrewer&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;load-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Load Data&lt;/h2&gt;
+&lt;p&gt;The data in this post is a &lt;code&gt;data.frame&lt;/code&gt; where rows are genes and columns are patients, the measurement is &lt;span class=&#34;math inline&#34;&gt;\(log_2(rpkm + 1)\)&lt;/span&gt;. It’s straghtforward to understand so I’d rather not to bother to provide a link for it.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data = read.csv(&amp;quot;/Users/bos/R-workspace/2.eQTL/large500_expr&amp;quot;)
+expr = as.matrix(data[,-1])  # 1st column is gene id&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;quantile-transformation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Quantile Transformation&lt;/h2&gt;
+&lt;div id=&#34;before-quantile-transformation&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;before quantile transformation&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(density(unlist(expr[, 1])), col=col_vec[1])
+for(i in 2:40) lines(density(expr[,i]), col=col_vec[i])&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://bsun0802.github.io/full-site/post/quantile-nomrlization-and-inverse-normal-transform/index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;after-quantile-transformation&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;after quantile transformation&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;expr.qt &amp;lt;- preprocessCore::normalize.quantiles(as.matrix(expr))
+plot(density(expr.qt[,1]), col = col_vec[1])
+for(i in 2:40) lines(density(expr.qt[,i]), col=col_vec[i])&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://bsun0802.github.io/full-site/post/quantile-nomrlization-and-inverse-normal-transform/index_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Note here most part of those transformed distributions land on top of each other, but if the variability is larger in your data, then near the tail the distributions will not be perfectly same which is good because it keeps the variability.&lt;br /&gt;
+However, &lt;strong&gt;Quantile Normalization can not remove batch effect&lt;/strong&gt;, see &lt;a href=&#34;http://jtleek.com/genstats/inst/doc/02_05_normalization.html&#34;&gt;Jeff’s post&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;inverse-normal-transformation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Inverse-Normal-Transformation&lt;/h2&gt;
+&lt;div id=&#34;before&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;before&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(density(expr[1,]), col = col_vec[1])
+for(i in 2:40) lines(density(expr[i, ]), col = col_vec[i])&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://bsun0802.github.io/full-site/post/quantile-nomrlization-and-inverse-normal-transform/index_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;after&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;After&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;expr.int = t(apply(expr, 1, RNOmni::rankNormal))
+plot(density(expr.int[1,]), col = col_vec[1])
+for(i in 2:40) lines(density(expr.int[i, ]), col = col_vec[i])&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://bsun0802.github.io/full-site/post/quantile-nomrlization-and-inverse-normal-transform/index_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, the distribution are normalized toward std. normal, and variability of the tails are preserved.(You may expect a different result with this plot, because my data here is RNA-seq data with heavy-tails, for moderate-tailed data, it should become more similar to a std. normal. )&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;session-information&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session Information&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;if (!requireNamespace(&amp;quot;devtools&amp;quot;)) install.packages(&amp;quot;devtools&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required namespace: devtools&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::session_info()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Session info -------------------------------------------------------------&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  setting  value                       
+##  version  R version 3.5.0 (2018-04-23)
+##  system   x86_64, darwin15.6.0        
+##  ui       X11                         
+##  language (EN)                        
+##  collate  en_US.UTF-8                 
+##  tz       America/Los_Angeles         
+##  date     2018-10-20&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Packages -----------------------------------------------------------------&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  package        * version date       source         
+##  abind            1.4-5   2016-07-21 CRAN (R 3.5.0) 
+##  backports        1.1.2   2017-12-13 CRAN (R 3.5.0) 
+##  base           * 3.5.0   2018-04-24 local          
+##  blogdown         0.8     2018-07-15 CRAN (R 3.5.0) 
+##  bookdown         0.7     2018-02-18 CRAN (R 3.5.0) 
+##  codetools        0.2-15  2016-10-05 CRAN (R 3.5.0) 
+##  compiler         3.5.0   2018-04-24 local          
+##  datasets       * 3.5.0   2018-04-24 local          
+##  devtools         1.13.6  2018-06-27 CRAN (R 3.5.0) 
+##  digest           0.6.15  2018-01-28 CRAN (R 3.5.0) 
+##  evaluate         0.11    2018-07-17 CRAN (R 3.5.0) 
+##  foreach          1.4.4   2017-12-12 CRAN (R 3.5.0) 
+##  graphics       * 3.5.0   2018-04-24 local          
+##  grDevices      * 3.5.0   2018-04-24 local          
+##  htmltools        0.3.6   2017-04-28 CRAN (R 3.5.0) 
+##  iterators        1.0.10  2018-07-13 CRAN (R 3.5.0) 
+##  knitr            1.20    2018-02-20 CRAN (R 3.5.0) 
+##  magrittr         1.5     2014-11-22 CRAN (R 3.5.0) 
+##  memoise          1.1.0   2017-04-21 CRAN (R 3.5.0) 
+##  methods        * 3.5.0   2018-04-24 local          
+##  plyr             1.8.4   2016-06-08 CRAN (R 3.5.0) 
+##  preprocessCore * 1.42.0  2018-05-01 Bioconductor   
+##  RColorBrewer   * 1.1-2   2014-12-07 CRAN (R 3.5.0) 
+##  Rcpp             0.12.18 2018-07-23 cran (@0.12.18)
+##  rmarkdown        1.10    2018-06-11 CRAN (R 3.5.0) 
+##  RNOmni         * 0.4.0   2018-05-16 CRAN (R 3.5.0) 
+##  rprojroot        1.3-2   2018-01-03 CRAN (R 3.5.0) 
+##  stats          * 3.5.0   2018-04-24 local          
+##  stringi          1.2.4   2018-07-20 CRAN (R 3.5.0) 
+##  stringr          1.3.1   2018-05-10 CRAN (R 3.5.0) 
+##  tools            3.5.0   2018-04-24 local          
+##  utils          * 3.5.0   2018-04-24 local          
+##  withr            2.1.2   2018-03-15 CRAN (R 3.5.0) 
+##  xfun             0.3     2018-07-06 CRAN (R 3.5.0) 
+##  yaml             2.2.0   2018-07-25 CRAN (R 3.5.0)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun video transformer in Python</title>
+      <link>https://bsun0802.github.io/full-site/project/internal-project/</link>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/project/internal-project/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gitbook example</title>
+      <link>https://bsun0802.github.io/full-site/project/gitbook-example/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 -0800</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/project/gitbook-example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gene Viz 1.0(R Shiny Dashboard)</title>
+      <link>https://bsun0802.github.io/full-site/project/external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0700</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/project/external-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Academic: the website designer for Hugo</title>
+      <link>https://bsun0802.github.io/full-site/post/getting-started/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/post/getting-started/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Academic&lt;/strong&gt; makes it easy to create a beautiful website for free using Markdown. Customize anything on your site with widgets, themes, and language packs.&lt;/p&gt;
+
+&lt;p&gt;Follow our easy &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/&#34; target=&#34;_blank&#34;&gt;step by step guide&lt;/a&gt; to learn how to build your own free website with Academic. &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Check out the personal demo&lt;/a&gt; or the &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;business demo&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;View the documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34; target=&#34;_blank&#34;&gt;Ask a question&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;Request a feature or report a bug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updating? View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support development of Academic:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34;&gt;Donate a coffee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34;&gt;Decorate your laptop or journal with an Academic sticker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34;&gt;Wear the T-shirt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Key features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Easily manage various content including homepage, blog posts, publications, talks, and projects&lt;/li&gt;
+&lt;li&gt;Extensible via &lt;strong&gt;color themes&lt;/strong&gt; and &lt;strong&gt;widgets/plugins&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Write in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;Markdown&lt;/a&gt; for easy formatting and code highlighting, with &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX&lt;/a&gt; for mathematical expressions&lt;/li&gt;
+&lt;li&gt;Social/academic network linking, &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, and &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus&lt;/a&gt; comments&lt;/li&gt;
+&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
+&lt;li&gt;Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;Multilingual and easy to customize&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;color-themes&#34;&gt;Color Themes&lt;/h2&gt;
+
+&lt;p&gt;Academic is available in different color themes and font themes.&lt;/p&gt;
+
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Default&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Ocean&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Dark&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Default&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Coffee theme with Playfair font&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+  
+  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;1950s&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png&#34;&gt;
+  &lt;/a&gt;
+  
+&lt;/div&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+
+&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;one-click install using your web browser (recommended)&lt;/li&gt;
+&lt;li&gt;install on your computer using Git with the Command Prompt/Terminal app&lt;/li&gt;
+&lt;li&gt;install on your computer by downloading the ZIP files&lt;/li&gt;
+&lt;li&gt;install on your computer with RStudio&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;quick-install-using-your-web-browser&#34;&gt;Quick install using your web browser&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://app.netlify.com/start/deploy?repository=https://github.com/sourcethemes/academic-kickstart&#34; target=&#34;_blank&#34;&gt;Install Academic with Netlify&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Netlify will provide you with a customizable URL to access your new site&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;On GitHub, go to your newly created &lt;code&gt;academic-kickstart&lt;/code&gt; repository and edit &lt;code&gt;config.toml&lt;/code&gt; to personalize your site. Shortly after saving the file, your site will automatically update&lt;/li&gt;
+&lt;li&gt;Read the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start Guide&lt;/a&gt; to learn how to add Markdown content. For inspiration, refer to the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;Markdown content&lt;/a&gt; which powers the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;install-with-git&#34;&gt;Install with Git&lt;/h3&gt;
+
+&lt;p&gt;Prerequisites:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://git-scm.com/downloads&#34; target=&#34;_blank&#34;&gt;Download and install Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing/#quick-install&#34; target=&#34;_blank&#34;&gt;Download and install Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart#fork-destination-box&#34; target=&#34;_blank&#34;&gt;Fork&lt;/a&gt; the &lt;em&gt;Academic Kickstart&lt;/em&gt; repository and clone your fork with Git:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/sourcethemes/academic-kickstart.git My_Website
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Note that if you forked Academic Kickstart, the above command should be edited to clone your fork, i.e. replace &lt;code&gt;sourcethemes&lt;/code&gt; with your GitHub username.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Initialize the theme:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd My_Website
+git submodule update --init --recursive
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;install-with-zip&#34;&gt;Install with ZIP&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart/archive/master.zip&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and extract &lt;em&gt;Academic Kickstart&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/archive/master.zip&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and extract the &lt;em&gt;Academic theme&lt;/em&gt; to the &lt;code&gt;themes/academic/&lt;/code&gt; folder from the above step&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;install-with-rstudio&#34;&gt;Install with RStudio&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;View the guide to installing Academic with RStudio&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;If you installed on your computer, view your new website by running the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now visit &lt;a href=&#34;http://localhost:1313&#34; target=&#34;_blank&#34;&gt;localhost:1313&lt;/a&gt; and your new Academic powered website will appear. Otherwise, if using Netlify, they will provide you with your URL.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start Guide&lt;/a&gt; to learn how to add Markdown content, customize your site, and deploy it. For inspiration, refer to the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;Markdown content&lt;/a&gt; which powers the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Build your site by running the &lt;code&gt;hugo&lt;/code&gt; command. Then &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;host it for free using Github Pages&lt;/a&gt; or Netlify (refer to the first installation method). Alternatively, copy the generated &lt;code&gt;public/&lt;/code&gt; directory (by FTP, Rsync, etc.) to your production web server (such as a university&amp;rsquo;s hosting service).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
+
+&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of updates and check out the &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;release notes&lt;/a&gt; prior to updating your site.&lt;/p&gt;
+
+&lt;p&gt;Before updating the framework, it is recommended to make a backup of your entire website directory (or at least your &lt;code&gt;themes/academic&lt;/code&gt; directory) and record your current version number.&lt;/p&gt;
+
+&lt;p&gt;By default, Academic is installed as a Git submodule which can be updated by running the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git submodule update --remote --merge
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Check out the update guide&lt;/a&gt; for full instructions and alternative methods.&lt;/p&gt;
+
+&lt;h2 id=&#34;feedback-contributing&#34;&gt;Feedback &amp;amp; Contributing&lt;/h2&gt;
+
+&lt;p&gt;Please use the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;issue tracker&lt;/a&gt; to let me know about any bugs or feature requests, or alternatively make a pull request.&lt;/p&gt;
+
+&lt;p&gt;For support, head over to the &lt;a href=&#34;http://discuss.gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo discussion forum&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>https://bsun0802.github.io/full-site/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/post/2015-07-23-r-rmarkdown/</guid>
+      <description>&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;R Markdown&lt;/h1&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &amp;lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Including Plots&lt;/h1&gt;
+&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
+  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
+  init.angle = -50, border = NA
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://bsun0802.github.io/full-site/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: A fancy pie chart.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://bsun0802.github.io/full-site/slides/example-slides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bsun0802.github.io/full-site/slides/example-slides/</guid>
+      <description>
+
+&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Code block:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+
+&lt;p&gt;Block math:&lt;/p&gt;
+
+&lt;p&gt;$$
+f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+  One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  Three
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

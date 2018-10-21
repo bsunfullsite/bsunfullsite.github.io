@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 2.4.0">
+  <meta name="generator" content="Hugo 0.49.2" />
+  <meta name="author" content="Bo Sun">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Hugo is a framework for building websites, technically speaking, building static pages. You could build your own website with the only prerequisite of some command line and start writing immediately with markdown. Step 0. Install Homebrew If you have a Mac but not using Homebrew, you definitely have to try this package manager. And we will need it to install Hugo anyway. Use the following command to install Homebrew: &gt;">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://bsun0802.github.io/full-site/tutorial/create-hugo/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/full-site/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-123494728-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="https://bsun0802.github.io/full-site/index.xml" type="application/rss+xml" title="Bo Sun">
+  <link rel="feed" href="https://bsun0802.github.io/full-site/index.xml" type="application/rss+xml" title="Bo Sun">
+  
+
+  <link rel="manifest" href="/full-site/site.webmanifest">
+  <link rel="icon" type="image/png" href="/full-site/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/full-site/img/icon-192.png">
+
+  <link rel="canonical" href="https://bsun0802.github.io/full-site/tutorial/create-hugo/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Bo Sun">
+  <meta property="og:url" content="https://bsun0802.github.io/full-site/tutorial/create-hugo/">
+  <meta property="og:title" content="Create your own website with HUGO | Bo Sun">
+  <meta property="og:description" content="Hugo is a framework for building websites, technically speaking, building static pages. You could build your own website with the only prerequisite of some command line and start writing immediately with markdown. Step 0. Install Homebrew If you have a Mac but not using Homebrew, you definitely have to try this package manager. And we will need it to install Hugo anyway. Use the following command to install Homebrew: &gt;">
+  
+  
+    
+  <meta property="og:image" content="https://bsun0802.github.io/full-site/img/headers/hugo.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-10-20T00:00:00-07:00">
+  
+  <meta property="article:modified_time" content="2018-10-20T00:00:00-07:00">
+  
+
+  
+
+  
+
+  <title>Create your own website with HUGO | Bo Sun</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/full-site/">Bo Sun</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/full-site/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/full-site/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/full-site/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/full-site/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/full-site/full-site/tutorial/">
+            
+            <span>Tutorials</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/full-site/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/full-site/files/cv.pdf">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/full-site/tutorial/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/full-site/tutorial/create-hugo/">HUGO</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/full-site/tutorial/create-hugo/">create website</a>
+      </li>
+      
+      <li >
+        <a href="/full-site/tutorial/deploy-hugo/">deploy website</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/full-site/tutorial/pytorch/">PyTorch</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/full-site/tutorial/pytorch/">Linear Regression</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#step-0-install-homebrew">Step 0. Install Homebrew</a></li>
+<li><a href="#step-1-install-hugo">Step 1. Install Hugo</a></li>
+</ul></li>
+<li><a href="#for-users-of-other-os">For users of other OS</a>
+<ul>
+<li><a href="#step-2-create-a-new-site">Step 2. Create a new site</a></li>
+<li><a href="#step-3-add-a-theme">Step 3. Add a theme</a></li>
+<li><a href="#step-4-start-writing">Step 4. Start writing</a>
+<ul>
+<li><a href="#creating-posts">Creating Posts</a></li>
+<li><a href="#creating-fixed-pages">Creating Fixed Pages</a></li>
+</ul></li>
+<li><a href="#step-5-infinity-have-fun-playing-with-it">Step 5 - Infinity. Have fun playing with it.</a></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+      <div id="search-hits">
+        
+      </div>
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Create your own website with HUGO</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<p><a href="https://gohugo.io" target="_blank">Hugo</a> is a framework for building websites, technically speaking, building static pages. You could build your own website with the only prerequisite of some <a href="https://www.learnenough.com/command-line-tutorial" target="_blank">command line</a> and start writing immediately with <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf" target="_blank">markdown</a>.</p>
+
+<h2 id="step-0-install-homebrew">Step 0. Install Homebrew</h2>
+
+<p>If you have a Mac but not using <a href="https://brew.sh" target="_blank">Homebrew</a>, you definitely have to try this package manager. And we will need it to install Hugo anyway.</p>
+
+<p>Use the following command to install Homebrew:</p>
+
+<pre><code>&gt; /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+
+&gt; brew --version # check installation
+</code></pre>
+
+<h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
+
+<p>If you have installed Homebrew successfully, then you could have Hugo installed in one line:</p>
+
+<pre><code>&gt; brew install hugo
+&gt; hugo help # you are good to go!
+</code></pre>
+
+<h1 id="for-users-of-other-os">For users of other OS</h1>
+
+<p>If you are <strong>not</strong> using macOS, you need to check more complete instructions at <a href="https://gohugo.io/getting-started/installing/" target="_blank">Install Hugo</a>.</p>
+
+<h2 id="step-2-create-a-new-site">Step 2. Create a new site</h2>
+
+<pre><code>&gt; hugo new site /@path/your-new-site
+</code></pre>
+
+<p>The above will create a folder named <code>your-new-site</code> in your designated @path. And it will be the root of your newly created Hugo web application.</p>
+
+<h2 id="step-3-add-a-theme">Step 3. Add a theme</h2>
+
+<p>Being one of the most popular open-source framework for building websites, Hugo has a large and responsive community producing cool themes. Complete list of available themes can be found <a href="https://themes.gohugo.io" target="_blank">here</a>.</p>
+
+<p>From the root of you Hugo site:</p>
+
+<pre><code>&gt; cd @your-new-site
+&gt; git init
+&gt; # add as submodule your favorite theme into `themes/@your-theme`:
+&gt; git submodule add https://github.com/@author/@your-theme.git themes/@your-theme
+&gt; # example
+&gt; # git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+
+&gt; # Generate site files into public directory
+&gt; hugo -t @your-theme
+</code></pre>
+
+<p>See also Hugo&rsquo;s <a href="https://blog.olowolo.com/post/hugo-quick-start/" target="_blank">Quick Start</a>.</p>
+
+<h2 id="step-4-start-writing">Step 4. Start writing</h2>
+
+<p>Congratulations, your first blog post is only one stone&rsquo;s throw from here!</p>
+
+<h3 id="creating-posts">Creating Posts</h3>
+
+<p>Posts should generally go under a <code>content/blog</code> directory. Simply run:</p>
+
+<pre><code>&gt; hugo new blog/your-new-post.md
+</code></pre>
+
+<p>the above will create <code>your-new-post.md</code> under <code>content/blog/</code>, as well as the <code>content/blog/</code> directory itself if not exist.</p>
+
+<p>For posts to be displayed on your site, you could do one of the following:
+   * add <code>draft = false</code> in the post’s <a href="https://gohugo.io/content-management/front-matter/#readout" target="_blank">front matter</a>
+   * or use the <code>--buildDrafts</code> option when building
+   * or add <code>builddrafts = true</code> in <code>config.toml</code>.</p>
+
+<h3 id="creating-fixed-pages">Creating Fixed Pages</h3>
+
+<p>Fixed pages such as an About page should preferably go under <code>content/fixed</code> or be present at the root of the <code>content</code> directory(my preferable way).</p>
+
+<pre><code>&gt; hugo new about.md
+</code></pre>
+
+<p>The static pages you are going to build is genuinely text-based and the only tool you need to grab is the <a href="https://www.markdownguide.org" target="_blank">markdown</a> makeup language.</p>
+
+<h2 id="step-5-infinity-have-fun-playing-with-it">Step 5 - Infinity. Have fun playing with it.</h2>
+
+<p>The best approach to learn something is to play with it. Actually I build this site as a 2018 birthday gift to myself.</p>
+
+<p>Recommended starting point:</p>
+
+<ul>
+<li><a href="https://gohugo.io/documentation/" target="_blank">Hugo docs</a>.</li>
+<li><a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/" target="_blank">Hugo 中文文档</a></li>
+<li><a href="https://blog.olowolo.com/post/hugo-quick-start/" target="_blank">Hugo 从入门到会用</a></li>
+</ul>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Oct 20, 2018
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    Bo Sun &copy; 2018 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/ruby.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    <script src="/full-site/js/hugo-academic.js"></script>
+    
+
+    
+    
+      <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyANxOLpnIbmXGvaUU3imqCL4KvMblWWIB8"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js" integrity="sha256-7vjlAeb8OaTrCXZkCNun9djzuB2owUsaO72kXaFDBJs=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//techalch.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/full-site/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "Search Results",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    <script src="/full-site/js/search.js"></script>
+    
+
+    
+    
+
+  </body>
+</html>
+
+
