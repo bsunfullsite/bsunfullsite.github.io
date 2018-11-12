@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Bo Sun &amp;copy; 2018</copyright>
-    <lastBuildDate>Sat, 20 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Nov 2018 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://bsunfullsite.github.io/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Transcriptional trajectories of human kidney injury progression</title>
+      <link>https://bsunfullsite.github.io/publication/kidney-implant-monocle-lmm/</link>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://bsunfullsite.github.io/publication/kidney-implant-monocle-lmm/</guid>
+      <description>Highlight
+In this research, I applied a Linear Mixed Model to achieve variance decomposition, which is pretty interesting. It helps us distinguish between genes that are explained more by confounding variables like sex, immune reponse, from the real signals that are explained by injury stage.</description>
+    </item>
     
     <item>
       <title>Quantile Normalization and Inverse Normal Transform</title>

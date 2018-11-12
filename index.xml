@@ -11,6 +11,18 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Transcriptional trajectories of human kidney injury progression</title>
+      <link>https://bsunfullsite.github.io/publication/kidney-implant-monocle-lmm/</link>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://bsunfullsite.github.io/publication/kidney-implant-monocle-lmm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Highlight&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this research, I applied a Linear Mixed Model to achieve variance decomposition, which is pretty interesting. It helps us distinguish between genes that are explained more by confounding variables like &lt;em&gt;sex&lt;/em&gt;, &lt;em&gt;immune reponse&lt;/em&gt;, from the real signals that are explained by &lt;em&gt;injury stage&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Deep Learning with PyTorch</title>
       <link>https://bsunfullsite.github.io/tutorial/pytorch/</link>
       <pubDate>Sat, 20 Oct 2018 00:00:00 -0700</pubDate>
