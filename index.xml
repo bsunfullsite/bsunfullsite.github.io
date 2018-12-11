@@ -497,6 +497,16 @@ for(i in 2:40) lines(density(expr.int[i, ]), col = col_vec[i])&lt;/code&gt;&lt;/
     </item>
     
     <item>
+      <title>Late B lymphocyte action in dysfunctional tissue repair following kidney injury and transplantation</title>
+      <link>https://bsunfullsite.github.io/publication/b-cell-second-author/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://bsunfullsite.github.io/publication/b-cell-second-author/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m second author in this paper. Primarily responsible for some data EDA and heatmap visualizations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Gitbook example</title>
       <link>https://bsunfullsite.github.io/project/gitbook-example/</link>
       <pubDate>Thu, 23 Nov 2017 00:00:00 -0800</pubDate>
