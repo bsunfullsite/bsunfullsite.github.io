@@ -11,6 +11,61 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Convert Black-and-White films into Colorized Cartoon Version</title>
+      <link>https://bsunfullsite.github.io/post/deepfour-colorization-cartoonization/</link>
+      <pubDate>Sat, 06 Apr 2019 16:32:00 -0700</pubDate>
+      
+      <guid>https://bsunfullsite.github.io/post/deepfour-colorization-cartoonization/</guid>
+      <description>
+
+&lt;p&gt;There are a lot of fantastic old movies for people to appreciate. However, the out-of-date filming technology and the black-and-white presentation make them less enjoyable. We want to make classic film works adorable again by endowing the old black-and-white version with vibrant colors, and even more interesting, parallel it with a cartoonized version. Our goal is to re-energize those old movies through deep learning techniques: Apply colorization on videos by convolutional networks, and animate it with different cartoon styles through GANs. And if possible, we&amp;rsquo;d like to try to research about temporal loss to stabilize the video outputs.&lt;/p&gt;
+
+&lt;h2 id=&#34;different-render-factor&#34;&gt;Different Render factor&lt;/h2&gt;
+
+&lt;p&gt;Larger render factor provides more realistic coloring, but increases the computation load.&lt;/p&gt;
+
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-renderFactor&#34; data-caption=&#34;Render Factor=8&#34; href=&#34;https://bsunfullsite.github.io/img/0005_render_8.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://bsunfullsite.github.io/img/0005_render_8.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-renderFactor&#34; data-caption=&#34;Render Factor=12&#34; href=&#34;https://bsunfullsite.github.io/img/0005_render_12.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://bsunfullsite.github.io/img/0005_render_12.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-renderFactor&#34; data-caption=&#34;Render Factor=20&#34; href=&#34;https://bsunfullsite.github.io/img/0005_render_20.jpg&#34;&gt;
+    &lt;img alt=&#34;&#34; src=&#34;https://bsunfullsite.github.io/img/0005_render_20.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Transcriptional trajectories of human kidney injury progression</title>
       <link>https://bsunfullsite.github.io/publication/kidney-implant-monocle-lmm/</link>
       <pubDate>Thu, 01 Nov 2018 00:00:00 -0700</pubDate>

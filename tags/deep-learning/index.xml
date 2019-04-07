@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>deep learning on Bo Sun</title>
+    <link>https://bsunfullsite.github.io/tags/deep-learning/</link>
+    <description>Recent content in deep learning on Bo Sun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Bo Sun &amp;copy; 2018</copyright>
+    <lastBuildDate>Sat, 06 Apr 2019 16:32:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://bsunfullsite.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convert Black-and-White films into Colorized Cartoon Version</title>
+      <link>https://bsunfullsite.github.io/post/deepfour-colorization-cartoonization/</link>
+      <pubDate>Sat, 06 Apr 2019 16:32:00 -0700</pubDate>
+      
+      <guid>https://bsunfullsite.github.io/post/deepfour-colorization-cartoonization/</guid>
+      <description>There are a lot of fantastic old movies for people to appreciate. However, the out-of-date filming technology and the black-and-white presentation make them less enjoyable. We want to make classic film works adorable again by endowing the old black-and-white version with vibrant colors, and even more interesting, parallel it with a cartoonized version. Our goal is to re-energize those old movies through deep learning techniques: Apply colorization on videos by convolutional networks, and animate it with different cartoon styles through GANs.</description>
+    </item>
+    
+  </channel>
+</rss>
